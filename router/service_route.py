@@ -5,7 +5,7 @@ from models import EmergencyService, User
 from auth import verify_password, create_access_token, SECRET_KEY, ALGORITHM
 from datetime import timedelta
 from typing import Optional
-import jwt
+from jose import jwt
 
 router = APIRouter(prefix="/services", tags=["Emergency Services"])
 
